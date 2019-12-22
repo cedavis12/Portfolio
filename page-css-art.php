@@ -30,7 +30,7 @@ $codepen_link   =       get_field('codepen_link');
 
             
 
-            <main id="content" class="col-md-4 justify-content-center" role="main">
+            <main id="content" class="card-columns" role="main">
 
                 <?php $loop = new WP_Query(array(
                     'post_type' => 'css_art',
@@ -40,9 +40,9 @@ $codepen_link   =       get_field('codepen_link');
 
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
 
-
-                    <a href="<?php the_field('codepen_link'); ?>" target="blank"><img src="<?php the_field('css_art_image'); ?>" alt="Pure CSS Art Image" class="img-fluid center"></a>
-                    <hr class="styled">
+                <div class="card no-border">
+                    <a href="<?php the_field('codepen_link'); ?>" target="blank"><img src="<?php the_field('css_art_image'); ?>" alt="Pure CSS Art Image" class="img-fluid css-art"></a>
+                </div>
 
                 <?php endwhile; ?>
 

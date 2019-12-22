@@ -15,7 +15,7 @@ $bio_image      =       get_field('bio_image');
             <h2 class="section-title"><?php echo $bio_label; ?></h2>
             <div class="row">
                 <div class="col-md-8">
-                    <img src="<?php echo $bio_image['url']; ?>" alt="<?php echo $bio_image['alt']; ?>" class="img-fluid rounded-circle">
+                    <img src="<?php echo $bio_image['url']; ?>" alt="<?php echo $bio_image['alt']; ?>" class="img-fluid">
                 </div>
                 <div class="col-md-4">
                     <p class="lead"><?php echo $bio_tagline; ?></p>
